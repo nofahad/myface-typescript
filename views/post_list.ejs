@@ -2,35 +2,39 @@
 <%- include('_head') -%>
 <%- include('_header') -%>
 <body>
+
 <h1>Posts</h1>
 
-<ul>
     <% postList.results.forEach(function(post) {%>
-        <li>
-            <h3>
+        <ul>
+            <h4>
                 <%= post.message %> 
-            </h3>
-            <p><b>Posted At :</b> <%= format(post.createdAt, "yyyy-MM-dd HH:mm:ss") %> 
-            <b>Posted By :</b> <%= post.postedBy.name %> - <%= post.postedBy.username%> -
-            <b>Liked By:</b> <%=post.likedBy.length%> - <b>Disliked By:</b> <%=post.dislikedBy.length%></p>
-
-            <img src= <%= post.imageUrl %> width="200" height="300"> 
-            <form method="post" action="/posts/<%=post.id %>/like">
-                <button type="submit">Like</button>
-            </form> 
-            Liked by : <%for (let i = 0; i < post.likedBy.length; i++) { %>
+            </h4>
+            <div class="Images">
+                <img src= <%= post.imageUrl %>> 
+            </div>
+            <p><b>Posted By :</b> <%= post.postedBy.name %> (<%= post.postedBy.username%>) <br>
+                <b>Posted At :</b> <%= format(post.createdAt, "dd-MM-yyyy HH:mm") %> <br> 
+                <b>Liked By:</b> <%=post.likedBy.length%>    <b>Disliked By:</b> <%=post.dislikedBy.length%></p>
+             
+            <p><b>Liked By:</b><%for (let i = 0; i < post.likedBy.length; i++) { %>
                 <%= post.likedBy[i].name %> 
             <% } %>
-            <form method="post" action="/posts/<%=post.id %>/dislike">
-                <button type="submit">Dislike</button>
-            </form> 
-            Disliked by : <%for (let i = 0; i < post.dislikedBy.length; i++) { %>
+            <b>Disliked By:</b> <%for (let i = 0; i < post.dislikedBy.length; i++) { %>
                 <%= post.dislikedBy[i].name %> 
-            <% } %>
-        </li>
+            <% } %></p>
+            <div class="Buttons">
+                <form  method="post" action="/posts/<%=post.id %>/like">
+                <button id="Like-Button" type="submit">Like</button>
+                </form> 
+                <form method="post" action="/posts/<%=post.id %>/dislike">
+                <button  id="Dislike-Button" type="submit">Dislike</button>
+                </form> 
+            </div>
+        </ul>
         
     <% }); %>
-</ul>
+
 <%if (postList.next) { %>
     <a href=<%= postList.next %>>Next</a>
 <% } %>

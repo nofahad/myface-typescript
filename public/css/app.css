@@ -1,1 +1,45 @@
 /* Add your styles here. */
+ul {
+    background : rgb(90, 69, 112);
+    border : 2px solid black;
+    padding : 10px;
+    margin-top: 20px;
+   
+}
+p {
+    background : rgb(130, 99, 164);
+}
+
+
+body {
+    background : rgb(106, 104, 104);
+}
+
+div.buttons{
+    display : flex;
+    justify-content :space-evenly;
+
+}
+
+#Like-Button{
+    background : rgb(178, 99, 176);
+}
+
+#Dislike-Button{
+    background : rgb(178, 99, 176);;
+}
+
+#Like-Button:visited{
+    background: blue;
+}
+
+div.Images{
+    border: 4px solid rgb(26, 8, 38) ;
+    width:200px;
+    justify-content: center;
+}
+
+div.Images img{
+    width: 200px
+}
+
