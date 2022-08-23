@@ -36,12 +36,13 @@ div.buttons{
 
 div.Images{
     border: 4px solid rgb(26, 8, 38) ;
-    width:200px;
+    width:100%;
     justify-content: center;
 }
 
 div.Images img{
-    width: 200px
+    width: 100%
+    
 }
 
 nav {
