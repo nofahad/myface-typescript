@@ -4,19 +4,33 @@
 <body>
 <h1>Posts</h1>
 
-<ol>
+<ul>
     <% postList.results.forEach(function(post) {%>
         <li>
-            <%= post.message %> - Posted At : <%= format(post.createdAt, "yyyy-MM-dd HH:mm:ss") %> 
-            - Posted By : <%= post.postedBy.name %>
-            <img src= <%= post.imageUrl %>  width="200" height="300"> 
-            <form method="LIKE" action="/posts/post.postId/">
-                <button type="LIKE">Like</button>
-            </form>
+            <h3>
+                <%= post.message %> 
+            </h3>
+            <p><b>Posted At :</b> <%= format(post.createdAt, "yyyy-MM-dd HH:mm:ss") %> 
+            <b>Posted By :</b> <%= post.postedBy.name %> - <%= post.postedBy.username%> -
+            <b>Liked By:</b> <%=post.likedBy.length%> - <b>Disliked By:</b> <%=post.dislikedBy.length%></p>
+
+            <img src= <%= post.imageUrl %> width="200" height="300"> 
+            <form method="post" action="/posts/<%=post.id %>/like">
+                <button type="submit">Like</button>
+            </form> 
+            Liked by : <%for (let i = 0; i < post.likedBy.length; i++) { %>
+                <%= post.likedBy[i].name %> 
+            <% } %>
+            <form method="post" action="/posts/<%=post.id %>/dislike">
+                <button type="submit">Dislike</button>
+            </form> 
+            Disliked by : <%for (let i = 0; i < post.dislikedBy.length; i++) { %>
+                <%= post.dislikedBy[i].name %> 
+            <% } %>
         </li>
         
     <% }); %>
-</ol>
+</ul>
 <%if (postList.next) { %>
     <a href=<%= postList.next %>>Next</a>
 <% } %>
