@@ -9,7 +9,9 @@
             <h4>
                 Name: <%= user.name %> 
             </h4>
-            <img src= <%= user.profileImageUrl %> width="100" height="150">
+            <div class="ProfileImages">
+                <img src= <%= user.profileImageUrl %> >
+            </div>
         <p>    <b>Username:</b> <%= user.username %> -
                <b>Email:</b> <%= user.email %> - <b>Posts:</b> <%= user.posts.length %>
                <b>Likes:</b> <%= user.likes.length %> - <b>Dislikes:</b> <%= user.dislikes.length %>

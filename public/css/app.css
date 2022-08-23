@@ -1,60 +1,70 @@
 /* Add your styles here. */
+nav {
+    background: #ffffff75;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    font-variant:normal;
+    
+}
+
+body {
+    /* background-image : url('https://img.freepik.com/free-photo/black-concrete-wall_53876-92805.jpg?w=996&t=st=1661272513~exp=1661273113~hmac=a4cdcf7152d9e87a9b32e74f383bae48ef8bda1107c356cc37cfb75a13edfbbc'); */
+    background-image : url('https://img.freepik.com/free-photo/texture-background_1404-59.jpg?w=996&t=st=1661270990~exp=1661271590~hmac=92a0cc4153f5a5181ee0a4a7e095a5cb139cade8775d372ee920e17844451a2f');
+    /* background-image: url('https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-concrete_1258-72085.jpg?w=1060&t=st=1661274185~exp=1661274785~hmac=10529d451fa8ce6ebe8a8d7a28751ec53794ef7d7695ddbc38c9bc14af3d4653'); */
+}
+h1 {
+    color: #ede9e0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    font-variant:normal;
+    font-weight: 600;
+    background : #ffffff0f;
+       
+}
 ul {
-    background : rgb(174 175 36);
-    border : 2px solid black;
+    color: #ede9e0;
+    background : #ffffff22;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    font-variant:normal;
+    font-size: 20px;
+    font-weight: 400;
     padding : 10px;
-    margin-top: 20px;
+    margin-top: 10px;
     font-family: Calibri;
+    line-height: 20px;
    
 }
 p {
-    background : rgb(163 164 43);
+    background : #5e5c5c11;
+    background-blend-mode: lighten;
+    font-size: 18px;
 }
-
-
-body {
-    background : rgb(89 173 154);
-}
-
 div.buttons{
     display : flex;
-    justify-content :space-evenly;
+    justify-content :left;
 
 }
 
 #Like-Button{
-    background : rgb(89 173 154);
+    background : #ffffff8d;
 }
 
 #Dislike-Button{
-    background : rgb(89 173 154);
+    background : #ffffff8d;
 }
 
 #Like-Button:visited{
     background: blue;
 }
 
-div.Images{
-    border: 4px solid rgb(26, 8, 38) ;
-    width:100%;
-    justify-content: center;
-}
-
 div.Images img{
-    width: 100%
+
+    width: 100% 
     
 }
 
-nav {
-    background: rgb(99 178 165);
-    font-family: Calibri;
-}
 
-h1 {
-    font-family: Calibri;
-    font-style: italic;
-    font-weight: bold;
-}
 
 /*
 design work under progress
