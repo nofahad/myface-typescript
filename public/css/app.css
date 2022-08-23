@@ -1,18 +1,19 @@
 /* Add your styles here. */
 ul {
-    background : rgb(90, 69, 112);
+    background : rgb(174 175 36);
     border : 2px solid black;
     padding : 10px;
     margin-top: 20px;
+    font-family: Calibri;
    
 }
 p {
-    background : rgb(130, 99, 164);
+    background : rgb(163 164 43);
 }
 
 
 body {
-    background : rgb(106, 104, 104);
+    background : rgb(89 173 154);
 }
 
 div.buttons{
@@ -22,11 +23,11 @@ div.buttons{
 }
 
 #Like-Button{
-    background : rgb(178, 99, 176);
+    background : rgb(89 173 154);
 }
 
 #Dislike-Button{
-    background : rgb(178, 99, 176);;
+    background : rgb(89 173 154);
 }
 
 #Like-Button:visited{
@@ -43,3 +44,13 @@ div.Images img{
     width: 200px
 }
 
+nav {
+    background: rgb(99 178 165);
+    font-family: Calibri;
+}
+
+h1 {
+    font-family: Calibri;
+    font-style: italic;
+    font-weight: bold;
+}
