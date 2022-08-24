@@ -15,11 +15,10 @@
                 <%= post.message %> 
             </h4>
             <p>
-                Posted By : <%= post.postedBy.name %> (<%= post.postedBy.username%>) <br>
-                Posted At :</b> <%= format(post.createdAt, "dd-MM-yyyy HH:mm") %> <br> 
-                Likes :<%=post.likedBy.length%> &nbsp;&nbsp;&nbsp;&nbsp; Dislikes :<%=post.dislikedBy.length%>
-            </p>
-             
+                    Posted By : <%= post.postedBy.name %> (<%= post.postedBy.username%>) <br>
+                    Posted At :</b> <%= format(post.createdAt, "dd-MM-yyyy HH:mm") %> <br> 
+                    Likes :<%=post.likedBy.length%> &nbsp;&nbsp;&nbsp;&nbsp; Dislikes :<%=post.dislikedBy.length%>
+                </p>
             <!-- <p>Liked By: <%for (let i = 0; i < post.likedBy.length; i++) { %> -->
                 <!-- <%= post.likedBy[i].name %>  -->
             <!-- <% } %> <br> -->
