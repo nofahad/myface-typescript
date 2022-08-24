@@ -133,6 +133,10 @@ div.UserProfileInfo{
 
 div.profile{
     display:flex;
+    position:relative;
+    top:-60px;
+    align-items:center;
+    justify-content:center;
    
 }
 
@@ -168,6 +172,7 @@ a {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
   
  }
+ 
 div.UserProfileInfo p{
     color: #ede9e0;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -176,8 +181,8 @@ div.UserProfileInfo p{
     font-size: 13px;
     font-weight: 400;
 }
- div.UserProfileImage img{
-    max-width:70%;
+ div.profile img{
+    width:120px;
     border-radius: 50%;
     /* display:flex; */
     /* align-self:flex-start; */
