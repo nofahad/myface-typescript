@@ -1,12 +1,17 @@
 /* Add your styles here. */
 nav {
-    background: #499be0de;
+    background: #151820;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: oblique;
     font-variant:normal;
     
 }
 
+
+div.UserPageNavBar{
+    display: flex;
+    justify-content: space-between;
+}
 
 div.NavigationBar{
     display:flex;
@@ -36,8 +41,8 @@ body {
     /* background-image : url('https://img.freepik.com/free-photo/black-concrete-wall_53876-92805.jpg?w=996&t=st=1661272513~exp=1661273113~hmac=a4cdcf7152d9e87a9b32e74f383bae48ef8bda1107c356cc37cfb75a13edfbbc'); */
     /* background-image : url('https://img.freepik.com/free-photo/texture-background_1404-59.jpg?w=996&t=st=1661270990~exp=1661271590~hmac=92a0cc4153f5a5181ee0a4a7e095a5cb139cade8775d372ee920e17844451a2f'); */
     /* background-image: url('https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-concrete_1258-72085.jpg?w=1060&t=st=1661274185~exp=1661274785~hmac=10529d451fa8ce6ebe8a8d7a28751ec53794ef7d7695ddbc38c9bc14af3d4653'); */
-    background-image: url('https://img.freepik.com/free-vector/abstract-bokeh-lights-background_1409-1235.jpg?w=1380&t=st=1661282628~exp=1661283228~hmac=0e19b3e51a3571b8f080f0ea75edabb879bd597a34c6064019445dafce3ba46a');
-    /* background-color: #f4ae0b; */
+    /* background-image: url('https://img.freepik.com/free-vector/abstract-bokeh-lights-background_1409-1235.jpg?w=1380&t=st=1661282628~exp=1661283228~hmac=0e19b3e51a3571b8f080f0ea75edabb879bd597a34c6064019445dafce3ba46a'); */
+    background-color: #252A38;
 }
 h1 {
     color: #ede9e0;
@@ -68,7 +73,7 @@ label{
 ul {
     color: #ede9e0;
     /* color:#bd912d; */
-    background : #ffffff22;
+    /* background : #ffffff22; */
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: oblique;
     font-variant:normal;
@@ -79,6 +84,10 @@ ul {
     font-family: Calibri;
     line-height: 20px;
    
+}
+
+div.PostBox{
+    background: #151820;
 }
 
 p {
@@ -149,14 +158,17 @@ div.profile{
 
 div.UserPosts{
     display:flex;
-    
+    width: 2750;
 }
 
 div.LikedPosts{
     display:flex;
+    width: 2750;
 }
+
 div.DisLikedPosts{
     display:flex;
+    width: 2750;
 }
 
 ol {
@@ -209,7 +221,7 @@ div.ProfileHeadings{
     font-size: 20px;
     font-weight: 400;
 }
-div.UserPosts p{
+div.UserPosts ul{
     color: #ede9e0;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: oblique;
@@ -217,7 +229,7 @@ div.UserPosts p{
     font-size: 10px;
     font-weight: 400;
 }
-div.LikedPosts p{
+div.LikedPosts ul{
     color: #ede9e0;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: oblique;
@@ -225,7 +237,7 @@ div.LikedPosts p{
     font-size: 10px;
     font-weight: 400;
 }
-div.DisLikedPosts p{
+div.DisLikedPosts ul{
     color: #ede9e0;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: oblique;
