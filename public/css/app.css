@@ -1,51 +1,142 @@
 /* Add your styles here. */
-ul {
-    background : rgb(174 175 36);
-    border : 2px solid black;
-    padding : 10px;
-    margin-top: 20px;
-    font-family: Calibri;
-   
+nav {
+    background: #499be0de;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    font-variant:normal;
+    
 }
-p {
-    background : rgb(163 164 43);
+div.HomePage{
+    display:inline-block
+    
+}
+
+div.NavigationBar{
+    display:flex;
+    justify-content:space-between;
+    
+}
+div.HomePageMiddle{
+    display:inline-block
+    
+    
+}
+div.HomePageRight{
+    display:inline-block;
+    
+    
 }
 
 
 body {
-    background : rgb(89 173 154);
+    /* background-image : url('https://img.freepik.com/free-photo/black-concrete-wall_53876-92805.jpg?w=996&t=st=1661272513~exp=1661273113~hmac=a4cdcf7152d9e87a9b32e74f383bae48ef8bda1107c356cc37cfb75a13edfbbc'); */
+    /* background-image : url('https://img.freepik.com/free-photo/texture-background_1404-59.jpg?w=996&t=st=1661270990~exp=1661271590~hmac=92a0cc4153f5a5181ee0a4a7e095a5cb139cade8775d372ee920e17844451a2f'); */
+    /* background-image: url('https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-concrete_1258-72085.jpg?w=1060&t=st=1661274185~exp=1661274785~hmac=10529d451fa8ce6ebe8a8d7a28751ec53794ef7d7695ddbc38c9bc14af3d4653'); */
+    background-image: url('https://img.freepik.com/free-vector/abstract-bokeh-lights-background_1409-1235.jpg?w=1380&t=st=1661282628~exp=1661283228~hmac=0e19b3e51a3571b8f080f0ea75edabb879bd597a34c6064019445dafce3ba46a');
+}
+h1 {
+    color: #ede9e0;
+    /* color:#bd912d; */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    font-variant:normal;
+    font-weight: 600;
+    background : #ffffff0f;
+}
+h2 {
+    color: #ede9e0;
+    /* color:#bd912d; */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    font-variant:normal;
+    font-weight: 500;
+    background : #ffffff0f;
+}
+label{
+    color: #ede9e0;
+    /* color:#bd912d; */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    font-variant:normal;
+    font-weight: 400;
+}
+ul {
+    color: #ede9e0;
+    /* color:#bd912d; */
+    background : #ffffff22;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    font-variant:normal;
+    font-size: 20px;
+    font-weight: 400;
+    padding : 10px;
+    margin: 10px;
+    font-family: Calibri;
+    line-height: 20px;
+   
 }
 
+p {
+    background : #5e5c5c11;
+    font-size: 18px;
+}
 div.buttons{
     display : flex;
-    justify-content :space-evenly;
+    justify-content :left;
 
 }
 
 #Like-Button{
-    background : rgb(89 173 154);
+    background : #ffffff8d;
 }
 
 #Dislike-Button{
-    background : rgb(89 173 154);
+    background : #ffffff8d;
 }
 
-#Like-Button:visited{
-    background: blue;
-}
 
 div.Images img{
-    max-width: 100%
+    max-width: 100% 
+   
+}
+
+div.UserInfo{
+    display:flex;
+    
     
 }
-
-nav {
-    background: rgb(99 178 165);
-    font-family: Calibri;
+div.UserInfo img{
+    max-width: 20%;
+    border-radius: 50%;
 }
 
-h1 {
+
+ol {
+    color: #ede9e0;
+    /* color:#bd912d; */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    font-variant:normal;
+    font-size: 20px;
+    font-weight: 400;
+    padding : 5px;
+    margin: 0px;
     font-family: Calibri;
-    font-style: italic;
-    font-weight: bold;
-}
+    line-height: 20px;
+ }
+
+
+/* @media only screen and (max-width=642px){
+    
+    div.Images img{
+        
+        max-width: 50% 
+       
+    }
+} */
+
+
+
+/*
+design work under progress
+*/

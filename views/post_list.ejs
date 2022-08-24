@@ -1,28 +1,31 @@
 <html lang="en-gb">
 <%- include('_head') -%>
 <%- include('_header') -%>
+
 <body>
 
-<h1>Posts</h1>
+<h1>Newsfeed</h1>
 
     <% postList.results.forEach(function(post) {%>
         <ul>
-            <h4>
-                <%= post.message %> 
-            </h4>
             <div class="Images">
                 <img src= <%= post.imageUrl %>> 
             </div>
-            <p><b>Posted By :</b> <%= post.postedBy.name %> (<%= post.postedBy.username%>) <br>
-                <b>Posted At :</b> <%= format(post.createdAt, "dd-MM-yyyy HH:mm") %> <br> 
-                <b>Liked By:</b> <%=post.likedBy.length%>    <b>Disliked By:</b> <%=post.dislikedBy.length%></p>
+            <h4>
+                <%= post.message %> 
+            </h4>
+            <p>
+                Posted By : <%= post.postedBy.name %> (<%= post.postedBy.username%>) <br>
+                Posted At :</b> <%= format(post.createdAt, "dd-MM-yyyy HH:mm") %> <br> 
+                Likes :<%=post.likedBy.length%> &nbsp;&nbsp;&nbsp;&nbsp; Dislikes :<%=post.dislikedBy.length%>
+            </p>
              
-            <p><b>Liked By:</b><%for (let i = 0; i < post.likedBy.length; i++) { %>
-                <%= post.likedBy[i].name %> 
-            <% } %>
-            <b>Disliked By:</b> <%for (let i = 0; i < post.dislikedBy.length; i++) { %>
-                <%= post.dislikedBy[i].name %> 
-            <% } %></p>
+            <!-- <p>Liked By: <%for (let i = 0; i < post.likedBy.length; i++) { %> -->
+                <!-- <%= post.likedBy[i].name %>  -->
+            <!-- <% } %> <br> -->
+            <!-- Disliked By: <%for (let i = 0; i < post.dislikedBy.length; i++) { %> -->
+                <!-- <%= post.dislikedBy[i].name %>  -->
+            <!-- <% } %></p> -->
             <div class="Buttons">
                 <form  method="post" action="/posts/<%=post.id %>/like">
                 <button id="Like-Button" type="submit">Like</button>

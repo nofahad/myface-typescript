@@ -4,29 +4,31 @@
 <body>
 <h1>Create User</h1>
 <h2>All fields marked with * are required</h2>
+ul{
 <form method="post" action="/users/create">
     <label>
         Name*:
         <input type="text" name="name" required="required"/>
-    </label>
+    </label><br><br>
     <label>
         Username*:
         <input type="text" name="username" required="required"/>
-    </label>
+    </label><br><br>
     <label>
         Email*:
         <input type="email" name="email" required="required"/>
-    </label>
+    </label><br><br>
     <label>
         ProfileImageUrl*:
         <input type="text" name="profileImageUrl" required="required"/>
-    </label>
+    </label><br><br>
     <label>
         CoverImageUrl*:
         <input type="text" name="coverImageUrl" required="required"/>
-    </label>
+    </label><br><br>
     <button type="submit">Submit</button>
 </form>
+}
 </body>
 <%- include('_footer') -%>
 </html>

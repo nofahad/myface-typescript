@@ -1,8 +1,25 @@
 <html lang="en-gb">
 <%- include('_head') -%>
-<%- include('_header') -%>
+<!-- <%- include('_header') -%> -->
 <body>
-<h1><%= name %></h1>
+    <header>
+        <nav>
+            <div class="HomePage">
+                 <a href="">My Face</a>
+            </div>
+            <div class=HomePageMiddle>
+                <a href="/user.id">Home</a>
+                <a href="/posts">Posts</a>
+                <a href="/users">Users</a>
+    
+            </div>
+            <div class=HomePageRight>
+                <a href="/posts/create">+New Post</a>
+                
+            </div>
+        </nav>
+    </header>
+     
 </body>
 <%- include('_footer') -%>
 </html>

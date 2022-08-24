@@ -3,18 +3,19 @@
 <%- include('_header') -%>
 <body>
 <h1>Create Post</h1>
-<form method="post" action="/posts/create">
+ul{<form method="post" action="/posts/create">
     <label>
         Message:
     </label>
         <input type="text" name="message"/>
-    <label>
+    <label><br><br>
         Image:
     </label>
-        <input type="text" name="imageUrl"/>
+        <input type="text" name="imageUrl"/><br><br>
     
         <button type="submit">Submit</button>
 </form>
+}
 </body>
 <%- include('_footer') -%>
 </html>
