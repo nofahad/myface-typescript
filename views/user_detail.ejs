@@ -4,7 +4,7 @@
 <body>
     <header>
         <nav>
-            <div class="HomeBar">
+            
             <div class="HomePage">
                  <a href="/posts">My Face</a>
             </div>
@@ -18,25 +18,23 @@
                 <a href="/posts/create">+New Post</a>
                 
             </div>
-        </div>
+        
         </nav>
     </header>
     <div class="CoverImage">
         <img src= <%= coverImageUrl %> >
     </div>
     <div class="profile">
-    <!-- <div class="UserProfileImage"> -->
-        <img src= <%= profileImageUrl %> >
-    <!-- </div> -->
     
+        <img src= <%= profileImageUrl %> >
         <div class="UserProfileInfo">
-                <p>Name: <%= name %><br>
-                    Username: <%= username %><br>
-                    Email: <%= email %> <br>
-                    
-                 </p> 
-            </div>
+            <p>Name: <%= name %><br>
+            Username: <%= username %><br>
+            Email: <%= email %> <br>
+            </p> 
+            
         </div>
+    </div>
         <div class="ProfileHeadings">
         <p><%= name %>'s posts: </p><br></div>
             <div class="UserPosts">

@@ -83,7 +83,7 @@ ul {
 
 p {
     background : #5e5c5c11;
-    font-size: 18px;
+    font-size: 14px;
 }
 div.buttons{
     display : flex;
@@ -107,6 +107,7 @@ div.Images img{
 
 div.UserInfo{
     display:flex;
+    background : #ffffff22;
 }
 
 div.UserInfo a{
@@ -116,8 +117,13 @@ div.UserInfo a{
     
     
 }
+div.UserInfo p{
+    background : #5e5c5c11;
+    font-size: 14px;
+    line-height: 12px;
+}
 div.UserInfo img{
-    max-width: 20%;
+    max-width: 30%;
     border-radius: 50%;
 }
 
@@ -137,6 +143,7 @@ div.profile{
     top:-60px;
     align-items:center;
     justify-content:center;
+    background : #5e5c5c11;
    
 }
 
@@ -144,6 +151,7 @@ div.UserPosts{
     display:flex;
     
 }
+
 div.LikedPosts{
     display:flex;
 }
@@ -184,17 +192,11 @@ div.UserProfileInfo p{
  div.profile img{
     width:120px;
     border-radius: 50%;
-    /* display:flex; */
-    /* align-self:flex-start; */
-   
-    /* display:flex-start; */
-    
+      
 }
 
 div.CoverImage img{
-    width: 304px; /*ask ellen*/
-    /* max-height:200px; */
-    /* max-width:100%; */
+    width: 304px; 
     object-fit:fill;
 
 
