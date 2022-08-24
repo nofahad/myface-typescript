@@ -1,24 +1,24 @@
 <html lang="en-gb">
 <%- include('_head') -%>
 <%- include('_header') -%>
+
 <body>
 <h1>Users</h1>
-<ol>
+
     <% results.forEach(function(user) {%>
-        <li>
-            <h4>
-                Name: <%= user.name %> 
-            </h4>
-            <div class="ProfileImages">
+        <ol>
+            <div class="UserInfo">
                 <img src= <%= user.profileImageUrl %> >
+                <p>Name: <a href="/users/<%=user.id%>/"><%= user.name %></a><br>
+                    Username:<%= user.username %><br>
+                    Email:<%= user.email %> <br>
+                    Posts:<%= user.posts.length %>&nbsp;&nbsp;&nbsp;Likes: <%= user.likes.length %>&nbsp;&nbsp;&nbsp; Dislikes: <%= user.dislikes.length %>
+                 </p>
             </div>
-        <p>    <b>Username:</b> <%= user.username %> -
-               <b>Email:</b> <%= user.email %> - <b>Posts:</b> <%= user.posts.length %>
-               <b>Likes:</b> <%= user.likes.length %> - <b>Dislikes:</b> <%= user.dislikes.length %>
-        </p>
-        </li>
+            
+        </ol>
     <% }); %>
-</ol>
+
 <%if (next) { %>
     <a href=<%= next %>>Next</a>
 <% } %>
