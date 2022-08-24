@@ -5,10 +5,10 @@
     <header>
         <nav>
             <div class="HomePage">
-                 <a href="">My Face</a>
+                 <a href="/posts">My Face</a>
             </div>
             <div class=HomePageMiddle>
-                <a href="/user.id">Home</a>
+                <a href="/users/<%=id%>/">Home</a>
                 <a href="/posts">Posts</a>
                 <a href="/users">Users</a>
     
@@ -19,8 +19,14 @@
             </div>
         </nav>
     </header>
-    <img src= <%= coverImageUrl %> >
-    <img src= <%= profileImageUrl %> >
+    <div class="CoverImage">
+        <img src= <%= coverImageUrl %> >
+    </div>
+    <div class="profile">
+    <div class="UserProfileImage">
+        <img src= <%= profileImageUrl %> >
+    </div>
+    
         <div class="UserProfileInfo">
                 <p>Name: <%= name %><br>
                     Username: <%= username %><br>
@@ -28,44 +34,52 @@
                     
                  </p> 
             </div>
+        </div>
+        <div class="ProfileHeadings">
+        <p><%= name %>'s posts: </p><br></div>
             <div class="UserPosts">
-                <%= name %>'s posts: <% posts.forEach(function(post) {%>
+                
+                <% posts.forEach(function(post) {%>
                     <ul>
                         <div class="Images">
                             <img src= <%= post.imageUrl %>> 
                         </div>
-                        <h4>
+                        <p>
                             <%= post.message %> 
-                        </h4>
+                        </p>
                         
                     </ul>
         
                     <% }); %>
             </div>
+            <div class="ProfileHeadings">
+            <p>Posts <%= name %> likes: </p><br></div>
             <div class="LikedPosts">
-                Posts <%= name %> likes: <% likes.forEach(function(post) {%>
+                
+                <% likes.forEach(function(post) {%>
                     <ul>
                         <div class="Images">
                             <img src= <%= post.imageUrl %>> 
                         </div>
-                        <h4>
+                        <p>
                             <%= post.message %> 
-                        </h4>
-                        
+                        </p>
                     </ul>
         
                     <% }); %>
             </div>
-            <div class="LikedPosts">
-                Posts <%= name %> dislikes: <% dislikes.forEach(function(post) {%>
+            <div class="ProfileHeadings">
+            <p>Posts <%= name %> dislikes: </p><br></div>
+            <div class="DisLikedPosts">
+                
+                <% dislikes.forEach(function(post) {%>
                     <ul>
                         <div class="Images">
                             <img src= <%= post.imageUrl %>> 
                         </div>
-                        <h4>
+                        <p>
                             <%= post.message %> 
-                        </h4>
-                        
+                        </p>
                     </ul>
         
                     <% }); %>
