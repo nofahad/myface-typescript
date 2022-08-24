@@ -19,7 +19,57 @@
             </div>
         </nav>
     </header>
-     
+    <img src= <%= coverImageUrl %> >
+    <img src= <%= profileImageUrl %> >
+        <div class="UserProfileInfo">
+                <p>Name: <%= name %><br>
+                    Username: <%= username %><br>
+                    Email: <%= email %> <br>
+                    
+                 </p> 
+            </div>
+            <div class="UserPosts">
+                <%= name %>'s posts: <% posts.forEach(function(post) {%>
+                    <ul>
+                        <div class="Images">
+                            <img src= <%= post.imageUrl %>> 
+                        </div>
+                        <h4>
+                            <%= post.message %> 
+                        </h4>
+                        
+                    </ul>
+        
+                    <% }); %>
+            </div>
+            <div class="LikedPosts">
+                Posts <%= name %> likes: <% likes.forEach(function(post) {%>
+                    <ul>
+                        <div class="Images">
+                            <img src= <%= post.imageUrl %>> 
+                        </div>
+                        <h4>
+                            <%= post.message %> 
+                        </h4>
+                        
+                    </ul>
+        
+                    <% }); %>
+            </div>
+            <div class="LikedPosts">
+                Posts <%= name %> dislikes: <% dislikes.forEach(function(post) {%>
+                    <ul>
+                        <div class="Images">
+                            <img src= <%= post.imageUrl %>> 
+                        </div>
+                        <h4>
+                            <%= post.message %> 
+                        </h4>
+                        
+                    </ul>
+        
+                    <% }); %>
+            </div>
 </body>
 <%- include('_footer') -%>
 </html>
