@@ -13,6 +13,21 @@ div.UserPageNavBar{
     justify-content: space-between;
 }
 
+div.NameOfUser{
+    font-weight: 600;
+    font-size: large;
+}
+
+div.username{
+    font-weight: 400;
+    font-size: small;
+}
+
+div.EmailOfUser{
+    font-weight: 300;
+    font-size: small;
+}
+
 div.NavigationBar{
     display:flex;
     justify-content:space-between;
@@ -149,9 +164,9 @@ div.UserProfileInfo{
 div.profile{
     display:flex;
     position:relative;
-    top:-60px;
+    top:-55px;
     align-items:center;
-    justify-content:center;
+    justify-content:space-evenly;
     background : #5e5c5c11;
    
 }
