@@ -8,9 +8,21 @@ nav {
 }
 
 
-div.UserPageNavBar{
+div.MobileMenu{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    background: #151820;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    font-variant:normal;
+    position: absolute;
+    z-index: 1;
+    align-items: center;
+    right: 0;
+    width: 70%;
+    height: 100%;
 }
 
 div.NameOfUser{
@@ -33,22 +45,22 @@ div.NavigationBar{
     justify-content:space-between;
     
 }
-div.HomePage{
-    display:inline-block;
-    align-items: left;
-    
+div.MyFaceLogo{
+    color:#ede9e0;
+    font-size: x-large;
+    font-weight: 600;
 }
-div.HomePageMiddle{
-    display:inline-block;
-    align-items: center;
-    
-    
+div.MobileMenuMiddle{
+    display: flex;
+    flex-direction: column;
+    height: 25%;
+    justify-content: space-evenly;
 }
-div.HomePageRight{
-    display:inline-block;
-    align-items: right;
-    
-    
+
+div.MobileMenuBottom{
+    position: relative;
+    display: flex;
+    top: -150;
 }
 
 

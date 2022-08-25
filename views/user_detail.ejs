@@ -4,25 +4,42 @@
 <body>
     <header>
         
-        <nav>
-            <div class="UserPageNavBar">
-            <div class="HomePage">
-                 <a href="">My Face</a>
+        <!-- <nav>
+            <div class="MobileMenu"> 
+            <div class="MyFaceLogo">
+                 My Face
             </div>
-            <div class=HomePageMiddle>
+            <div class=MobileMenuMiddle>
                 <a href="/users/<%=id%>/">Home</a>
                 <a href="/posts">Posts</a>
                 <a href="/users">Users</a>
     
             </div>
-            <div class=HomePageRight>
+            <div class="MobileMenuBottom">
                 <a href="/posts/create">+New Post</a>
                 
             </div>
         </div>
-        </nav>
+    </div>
+        </nav> -->
         
     </header>
+        <div class="MobileMenu"> 
+        <div class="MyFaceLogo">
+             My Face
+        </div>
+        <div class=MobileMenuMiddle>
+            <a href="/users/<%=id%>/">Home</a>
+            <a href="/posts">Posts</a>
+            <a href="/users">Users</a>
+
+        </div>
+        <div class="MobileMenuBottom">
+            <a href="/posts/create">+New Post</a>
+            
+        </div>
+    </div>
+</div>
     <div class="CoverImage">
         <img src= <%= coverImageUrl %> >
     </div>
