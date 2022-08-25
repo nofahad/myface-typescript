@@ -5,7 +5,7 @@
 <body>
 
 <h1>Newsfeed</h1>
-
+    <button  id="Change-Colour" type="button" onclick="changeColourOnClick()">Change Colour!</button>
     <% postList.results.forEach(function(post) {%>
         <ul>
             <div class="Images">
@@ -33,6 +33,7 @@
                 <button  id="Dislike-Button" type="submit">Dislike</button>
                 </form> 
             </div>
+            
         </ul>
         
     <% }); %>
