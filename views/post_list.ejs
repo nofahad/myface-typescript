@@ -6,6 +6,7 @@
 
 <h1>Newsfeed</h1>
     <button  id="Change-Colour" type="button" onclick="changeColourOnClick()">Change Colour!</button>
+    <div class="PostList">
     <% postList.results.forEach(function(post) {%>
         <ul>
             <div class="Images">
@@ -37,7 +38,7 @@
         </ul>
         
     <% }); %>
-
+</div>
 <%if (postList.next) { %>
     <a href=<%= postList.next %>>Next</a>
 <% } %>
